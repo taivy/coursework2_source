@@ -40,6 +40,8 @@ def get_post_comments_count_text(comments_cnt):
         return "Нет комментариев"
     elif comments_cnt == 1:
         return "1 комментарий"
+    elif comments_cnt < 5:
+        return f"{comments_cnt} комментария"
     else:
         return f"{comments_cnt} комментариев"
 
